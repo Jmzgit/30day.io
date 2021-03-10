@@ -1,19 +1,51 @@
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
 ::selection {
    background-color: rgba(107, 107, 71, .1);
 }
 
-body {
+body, html {
+   height: 100%;
    text-align: center;
-   margin: 3rem 3rem 4rem 3rem;
-   background-color: #f2f2f2;
+   background-color: #f5f5f0;
+}
+
+.parallax {
+   /* The image used to inherit */
    background-image: url("../img/greentone.jpg");
+   /* background height */
+   height: 22%;
+   z-index: 1;
+   position: relative;
+   padding-bottom: 0px;
+   overflow: visible;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.parallax:after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: inherit;
+   z-index: -1;
+   bottom: 0;
+   left: 2px;
+   transform: skewX(3deg);
 }
 
 #main {
-   background-color: #f5f5f0;
-   border: 5px solid rgba(56, 38, 25, .7);
-   border-radius: 5rem;
-   box-shadow: 3px 3px 5px #6b6b47;
+   border: 5px solid rgba(56, 38, 25, .4);
+   border-radius: 1.2rem;
+   box-shadow: 2.5px 1px 1px #6b6b47;
 }
 
 h1 {
@@ -30,21 +62,30 @@ h1 {
    font-size: 4vw
 }
 
+
 p {
    font-family: 'Lucida Sans';
    color: #6b6b47;
    font-size: 28px;
    margin-top: -3%;
    line-height: 1;
+   text-align: justify;
+
 }
 
 p.content {
    font-family: 'Lucida Sans';
+   background-color: #f5f5f0;
    color: #6b6b47;
    margin-top: -5%;
    font-size: 28px;
    padding: 3%;
    line-height: 1.75
+}
+
+h1+p {
+   text-align: center;
+   border: 0;
 }
 
 #img-div {
@@ -93,14 +134,14 @@ h3 {
 }
 
 blockquote {
-   display: block;
    color: #31312d;
    font-size: 28px;
-   width: 55%;
+   width: 65%;
    margin: auto;
    font-family: 'Marck Script', cursive;
-   padding: 1%;
-   text-shadow: 1px 1px 2px #757574
+   padding-top: 1.5rem;
+   text-shadow: 1px 1px 2px #757574;
+   margin-bottom: -8px;
 }
 
 a {
