@@ -108,6 +108,20 @@ img {
       height: auto;
       margin: auto
    }
+   .parallax {
+      /* The image used to inherit */
+      background-image: url("../img/greentone.jpg");
+      /* background height */
+      height: 12%;
+      z-index: 1;
+      position: relative;
+      overflow: visible;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
 }
 
 #img-caption {
