@@ -100,7 +100,7 @@ img {
    margin: auto
 }
 
-@media (min-width:767px) {
+@media (max-width:767px) {
    img {
       box-shadow: 5px 10px 8px #a3a375;
       padding: 1%;
@@ -112,7 +112,7 @@ img {
       /* The image used to inherit */
       background-image: url("../img/greentone.jpg");
       /* background height */
-      height: 12%;
+      height: 15%;
       z-index: 1;
       position: relative;
       overflow: visible;
