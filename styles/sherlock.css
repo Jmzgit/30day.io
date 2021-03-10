@@ -1,13 +1,12 @@
 ::selection {
-  background-color: rgba(107, 107, 71, .1);
+   background-color: rgba(107, 107, 71, .1);
 }
-body {
 
+body {
    text-align: center;
    margin: 3rem 3rem 4rem 3rem;
    background-color: #f2f2f2;
    background-image: url("../img/greentone.jpg");
-
 }
 
 #main {
@@ -37,7 +36,6 @@ p {
    font-size: 28px;
    margin-top: -3%;
    line-height: 1;
-
 }
 
 p.content {
@@ -71,7 +69,6 @@ img {
       height: auto;
       margin: auto
    }
-
 }
 
 #img-caption {
@@ -95,7 +92,7 @@ h3 {
    margin: 20px auto
 }
 
-blockquote a{
+blockquote {
    display: block;
    color: #31312d;
    font-size: 28px;
@@ -112,7 +109,13 @@ a {
 }
 
 a:hover {
-   
    background-color: rgba(107, 107, 71, .1);
 }
-a span { height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px; }
+
+a span {
+   height: 1px;
+   width: 1px;
+   position: absolute;
+   overflow: hidden;
+   top: -10px;
+}
