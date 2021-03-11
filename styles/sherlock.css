@@ -85,6 +85,19 @@ h1+p {
    text-align: center;
    border: 0;
 }
+input {
+   display:none;
+}
+/* nice hack show and hide */
+span#cont, span#cont1 {
+   display:none;
+}
+input#show:checked ~ span#cont {
+ display:block;
+}
+input#show1:checked ~ span#cont1 {
+ display:block;
+}
 
 #img-div {
    background-color: #f5f5f0;
@@ -121,6 +134,15 @@ img {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+   }
+   p.content {
+      font-family: 'Lucida Sans';
+      background-color: #f5f5f0;
+      color: #6b6b47;
+      margin-top: -5%;
+      font-size: 20px;
+      padding: 1.2rem;
+      line-height: 1.75
    }
 }
 
