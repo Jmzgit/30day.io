@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+.myYard {
+   margin: 2% auto;
+   width:85vw;
+   height: 50rem;
+   padding: 10px;
+   border:1px solid red;
+}
+.container {
+   display: flex;
+   flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+   .container, .containerB{
+    flex-direction: column;
+  }
+}
+header,  .mySection, aside,
+ footer {
+   border-left: 1px dashed grey;
+   border-right: 1px dashed grey;
+   border-bottom: 1px dashed grey;
+   border-top: 1px dashed grey;
+}
+header {
+   flex-basis: 100%;
+}
+.containerA {
+   height:66%;
+}
+.mySection {
+   flex: 2;
+   height: 100%;
+}
+
+.myAside {
+      flex: 1;
+}
+.containerB {
+  flex-wrap: wrap;
+}
+.myArticle1 {
+   margin: 25% 0;
+   flex: 1;
+}
+.myArticle2 {
+   flex: 1;
+}
+.myFooter {
+   height: 3rem;
+}

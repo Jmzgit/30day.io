@@ -5,16 +5,23 @@
       <!-- en-US -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Pagina mega estelar</title>
+   <link rel="stylesheet" href="styles/index.css">
    </head>
    <body>
-      <header>
-         <hgroup>
-            <h1>Header</h1>
-            <h2>Subheader</h2>
+      <div class="myYard">
+         <div class="container">
+
+
+      <header class="myHeader">
+         <hgroup class="myHgroup">
+            <h1 class="myh1">Header</h1>
+            <h2 class="myh2">Subheader</h2>
          </hgroup>
       </header>
-      <nav>
+      </div>
+      <nav class="myNav">
          <ul>
+            <span>Nav</span>
             <li>
                <!-- NOTE: adding anchor -->
                <span><a href="html/dayone.html">Day one</a> </span>
@@ -24,27 +31,31 @@
             </li>
          </ul>
       </nav>
-      <section>
-         <article>
-            <header>
+      <div class="container containerA">
+      <section class="mySection">
+         <span>Section</span>
+         <div class="container containerB">
+         <article class="myArticle1">
+            <header class="articleHeader">
                <h1>Article #1</h1>
             </header>
-            <section>
+            <section class="articleSection">
                This is the first article.
             </section>
          </article>
-         <article>
-            <header>
+         <article class="myArticle2">
+            <header class="articleHeader">
                <h1>Article #2</h1>
             </header>
-            <section>
+            <section class="articleSection">
                This is the second article.
             </section>
          </article>
+         </div>
       </section>
-      <aside>
-         <section>
-            <h1>Links</h1>
+      <aside class="myAside">
+         <section class="asideSection">
+            <h1>Aside</h1>
             <ul>
                <li>
                   <a href="#">Link 1</a>
@@ -54,11 +65,13 @@
                </li>
             </ul>
          </section>
-         <figure>
+         <figure class="myFigure">
             <img width="85" height="85" src="http://domain.tld/path/to/image.jpg" alt="foobar"/>
-            <figcaption>Foobar</figcaption>
+            <figcaption class="myFigcaption">Foobar</figcaption>
          </figure>
       </aside>
-      <footer>Footer</footer>
+      </div>
+      <footer class="myFooter">Footer</footer>
+      </div>
    </body>
 </html>
