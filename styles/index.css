@@ -1,12 +1,17 @@
 * {
   box-sizing: border-box;
+   text-decoration: none;
+   color: #000;
+  font-family:  "Arial";
+  font-weight: normal;
+  margin-left: 5px;
 }
 .myYard {
    margin: 2% auto;
    width:85vw;
-   height: 50rem;
+   height: 95vh;
    padding: 10px;
-   border:1px solid red;
+
 }
 .container {
    display: flex;
@@ -28,7 +33,7 @@ header {
    flex-basis: 100%;
 }
 .containerA {
-   height:66%;
+   height:60%;
 }
 .mySection {
    flex: 2;
